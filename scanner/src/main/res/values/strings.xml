@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_permission_info_0">Camera permission info</string>
+    <string name="camera_permission_grantbutton_0">Ottieni i permessi</string>
+    <string name="camera_permission_info_1">Camera permission info 1</string>
+    <string name="camera_permission_grantbutton_1">Grant permissions</string>
+    <string name="permission_explainer_message">To scan a code  we need access to the camera on your device</string>
+    <string name="permission_explainer_action">Grant permission</string>
+    <string name="permission_message">To be able to scan a code, you need to grant this app permission to access camera.</string>
+    <string name="launch_settings">Grant Permission in Settings</string>
+    <string name="camera_scan_button">camera button</string>
+</resources>

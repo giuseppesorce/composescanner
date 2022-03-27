@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_permission_info_0">Camera permission info</string>
+    <string name="camera_permission_grantbutton_0">Ottieni i permessi</string>
+    <string name="camera_permission_info_1">Camera permission info 1</string>
+    <string name="camera_permission_grantbutton_1">Grant permissions</string>
+    <string name="permission_explainer_message">Per usare lo scanner devi accettare i permessi</string>
+    <string name="permission_explainer_action">Ottieni i permessi</string>
+    <string name="permission_message">Per utilizzare lo scanner dovevi accettare i permeessi.</string>
+    <string name="launch_settings">Ottieni i permessi dalle impostazioni</string>
+    <string name="camera_scan_button">camera button</string>
+</resources>
