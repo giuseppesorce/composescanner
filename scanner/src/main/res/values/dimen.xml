@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="torchdimen">45dp</dimen>
+    <dimen name="torchdimen">40dp</dimen>
     <dimen name="closedimen">30dp</dimen>
 
 </resources>

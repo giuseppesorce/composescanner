@@ -46,16 +46,10 @@ fun Scanner(closeScanListener: () -> Unit, barCodeListener: (barCode: String) ->
         mutableStateOf(false)
     }
     val context = LocalContext.current
-    ConstraintLayout(
-        Modifier
-            .fillMaxSize()
-            .background(Color.Black)) {
-
+    ConstraintLayout(Modifier.fillMaxSize().background(Color.Black)) {
 
         val (preview, flashButton, closeButton) = createRefs()
         val executor = remember(context) { ContextCompat.getMainExecutor(context) }
-        val imageCapture: MutableState<ImageCapture?> = remember { mutableStateOf(null) }
-
       MLCameraView(
             barCodeListener,
             modifier = Modifier.constrainAs(preview) {
@@ -63,8 +57,7 @@ fun Scanner(closeScanListener: () -> Unit, barCodeListener: (barCode: String) ->
                 linkTo(start = parent.start, end = parent.end)
                 width = Dimension.fillToConstraints
                 height = Dimension.fillToConstraints
-            }, // Occupy the max size in the Compose UI tree
-            imageCapture = imageCapture,
+            },
             context = context,
             executor = executor,
            activeFlash = activeFlash
@@ -110,7 +103,6 @@ private var processingBarcode = AtomicBoolean(false)
 @Composable
 fun MLCameraView(
     barCodeListener: (barCode: String) -> Unit, modifier: Modifier,
-    imageCapture: MutableState<ImageCapture?>,
     executor: Executor,
     context: Context,
     activeFlash:Boolean
@@ -146,7 +138,6 @@ fun MLCameraView(
                                     }
                                 })
                         }
-                    imageCapture.value = ImageCapture.Builder().build()
                     cameraProvider.unbindAll()
                     val prev = Preview.Builder().build().also {
                         it.setSurfaceProvider(previewCameraView.surfaceProvider)
@@ -163,7 +154,6 @@ fun MLCameraView(
             )
             previewCameraView
         }
-
     )
     camera?.cameraControl?.enableTorch(activeFlash)
     AndroidView(

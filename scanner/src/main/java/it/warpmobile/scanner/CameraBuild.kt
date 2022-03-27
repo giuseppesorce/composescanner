@@ -54,7 +54,7 @@ fun CameraScannerStart(
             Scanner(closeScanListener, barCodeListener)
         }
         !permissionState.permissionRequested -> {
-            PermissionContentExplain(
+            PermissionExplainContent(
                 modifier = Modifier.fillMaxSize(),
             ) {
                 countPermission++
@@ -68,7 +68,7 @@ fun CameraScannerStart(
         }
         else -> {
             if (countPermission == 1) {
-                PermissionContentExplain(modifier = Modifier.fillMaxSize()) {
+                PermissionExplainContent(modifier = Modifier.fillMaxSize()) {
                     countPermission++
                     permissionState.launchPermissionRequest()
                 }

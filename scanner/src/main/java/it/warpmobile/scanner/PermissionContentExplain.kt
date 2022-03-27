@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
  * @author Giuseppe Sorce
  */
 @Composable
-fun PermissionContentExplain(modifier: Modifier = Modifier, requestPermission: () -> Unit) {
+fun PermissionExplainContent(modifier: Modifier = Modifier, requestPermission: () -> Unit) {
     Column(
         modifier = modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.Center,
@@ -39,6 +39,6 @@ fun PermissionContentExplain(modifier: Modifier = Modifier, requestPermission: (
 @Preview(showBackground = true)
 @Composable
 fun Preview_PermissionExplainer() {
-    PermissionContentExplain(modifier = Modifier.fillMaxWidth()) { }
+    PermissionExplainContent(modifier = Modifier.fillMaxWidth()) { }
 
 }

@@ -13,8 +13,16 @@ class ScannerViewModel : ViewModel() {
     val uiState = MutableStateFlow(ScannerState())
 
 
-    fun handleEvent(pairingEvent: ScannerEvents) {
-        when (pairingEvent) {
+    fun handleEvent(scanEvent: ScannerEvents) {
+        when (scanEvent) {
+            is ScannerEvents.SetCode-> {
+                if(!scanEvent.code.isNullOrEmpty()){
+                    uiState.value = uiState.value.copy(
+                        code = scanEvent.code
+                    )
+                }
+
+            }
             is ScannerEvents.CloseScanner-> {
 
                 uiState.value = uiState.value.copy(
