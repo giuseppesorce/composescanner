@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId = AppCoordinates.APP_ID
-        minSdk = 26
-        targetSdk = 30
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = Sdk.MIN_SDK_VERSION
+        targetSdk = Sdk.TARGET_SDK_VERSION
+        versionCode = AppCoordinates.APP_VERSION_CODE
+        versionName = AppCoordinates.APP_VERSION_NAME
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -66,13 +66,9 @@ dependencies {
     implementation(Compose.Permissions.permissions)
     //ViewModel
     implementation(Deps.ViewModel.lifecycle_runtime_ktx)
-
-
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Vers.COMPOSE}")
     debugImplementation(Compose.composeTooling)
-
-
 }

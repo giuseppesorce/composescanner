@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = Sdk.COMPILE_SDK_VERSION
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 32
+        minSdk = Sdk.MIN_SDK_VERSION
+        targetSdk = Sdk.TARGET_SDK_VERSION
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -45,7 +45,6 @@ android {
 
 dependencies {
 
-
     implementation(Deps.coreKtx)
     implementation(Deps.appCompact)
     //Compose dependencies
@@ -60,8 +59,6 @@ dependencies {
     implementation(Compose.Permissions.permissions)
     //ViewModel
     implementation(Deps.ViewModel.lifecycle_runtime_ktx)
-
-
     // CameraX
     implementation(Camera.CAMERAX_CORE)
     implementation(Camera.CAMERAX_LYFECYCLE)
@@ -70,15 +67,10 @@ dependencies {
     implementation(Camera.CAMERA2)
     //MLKIT Scan
     implementation(GoogleService.MLKIT_SCAN)
-    // EXIF Interface
-    implementation(Camera.EXITFINNTERFACE)
-    implementation(Deps.UIDesign.RECYCLERVIEW)
-
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Vers.COMPOSE}")
     debugImplementation(Compose.composeTooling)
-
 }

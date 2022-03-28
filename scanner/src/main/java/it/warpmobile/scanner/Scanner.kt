@@ -76,7 +76,6 @@ fun Scanner(closeScanListener: () -> Unit, barCodeListener: (barCode: String) ->
                     end.linkTo(parent.end)
                     bottom.linkTo(parent.bottom, 20.dp)
                 }
-
         )
 
         Image(

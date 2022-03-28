@@ -1,12 +1,11 @@
 object Sdk {
-    const val MIN_SDK_VERSION = 24
-    const val TARGET_SDK_VERSION = 30
+    const val MIN_SDK_VERSION = 26
+    const val TARGET_SDK_VERSION = 32
     const val COMPILE_SDK_VERSION = 32
     const val BUILD_TOOL_VERSION = "32.0.0"
 }
 
 object Vers {
-
 
     const val GRADLE = "7.0.4"
     const val KOTLIN = "1.6.10"
@@ -163,10 +162,6 @@ object Compose {
         const val permissions ="com.google.accompanist:accompanist-permissions:${Vers.COMPOSEPERMISSIONS}"
     }
 
-
-
-
-
 }
 
 object Camera {
@@ -180,13 +175,6 @@ object Camera {
 }
 
 
-object Firebase {
-    const val FIREBASE_BOM = "com.google.firebase:firebase-bom:${Vers.FIREBASE_VERS}"
-    const val FIREBASE_CRASHLYTICS = "com.google.firebase:firebase-crashlytics-ktx"
-    const val FIREBASE_ANALYTICS = "com.google.firebase:firebase-analytics-ktx"
-    const val FIREBASE_MESSAGING = "com.google.firebase:firebase-messaging"
-}
-
 object Kotlin {
     const val SERIALITATION_CORE =
         "org.jetbrains.kotlinx:kotlinx-serialization-core:${Vers.SERIALITATION}"
@@ -197,26 +185,6 @@ object Kotlin {
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Vers.COROUTINES_VERS}"
     const val SERIALITATPION_JVM =
         "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:${Vers.SERIALITATION}"
-}
-
-object Network {
-    const val RETROFIT = "com.squareup.retrofit2:retrofit:${Vers.RETROFIT}"
-    const val OKHTTP = "com.squareup.okhttp3:okhttp:${Vers.OKHTTP}"
-    const val KOTLIN_SER_CORE = "org.jetbrains.kotlinx:kotlinx-serialization-core:"
-    const val KOTLIN_SER_CONVERTER =
-        "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Vers.K_SERIALITATION_CONVERTER}"
-    const val LOGGING_INTERCEPTOR =
-        "com.squareup.okhttp3:logging-interceptor:${Vers.LOGGING_INTERCEPTOR}"
-    const val LOGGING_PRETTY_PRINT =
-        "cn.netdiscovery.http.interceptor:okhttp-logging-interceptor:${Vers.LOGGING_PRETTY_PRINT}"
-}
-
-object Room {
-    const val ROOM = "androidx.room:room-runtime:${Vers.ROOM}"
-    const val ROOM_TESTING = "androidx.room:room-testing:${Vers.ROOM}"
-    const val ROOM_COMPILER = "androidx.room:room-compiler:${Vers.ROOM}"
-    const val ROOM_COMMONS = "androidx.room:room-common:${Vers.ROOM}"
-    const val ROOM_KTX = "androidx.room:room-ktx:${Vers.ROOM}"
 }
 
 
@@ -233,20 +201,6 @@ object DI {
     const val HILT_VIEWMODEL =
         "androidx.hilt:hilt-lifecycle-viewmodel:${Vers.LIFECYCLE_VIEWMODEL}"
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:${Vers.HILT_COMPILER}"
-}
-
-object GoogleService {
-    private const val google = "com.google.android.gms"
-    const val LOCATION_SERVICE =
-        "${google}:play-services-location:${Vers.LOCATION_SERVICE}"
-    const val MAPS_SERVICE =
-        "${google}:play-services-maps:${Vers.MAPS}"
-    const val LYFECYCLE_SERVICE =
-        "androidx.lifecycle:lifecycle-service:${Vers.LIFECYCLE_SERVICE}"
-    const val MLKIT_SCAN =
-        "${google}:play-services-mlkit-barcode-scanning:${Vers.MLKIT_SCANNER_VERS}"
-    const val MLKIT_SCAN_GOOGLE = "com.google.mlkit:barcode-scanning:16.0.3"
-    const val MLKIT_FIREBASE = "com.google.firebase:firebase-ml-vision:24.1.0"
 }
 
 object AndroidTestingLib {
