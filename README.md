@@ -17,6 +17,14 @@ It is possibble use camera flash to help scanning
 
 Every contributors are welcome. We are using [this convention](https://www.conventionalcommits.org/en/v1.0.0/).
 
+
+| Open Scan | Permissions  | Scanner |
+| ------------------ | --------------------------- | ------------------ |
+|<img src="https://github.com/giuseppesorce/composescanner/blob/master/screen1.png" height="400" alt="Screenshot"/> | <img src="https://github.com/giuseppesorce/composescanner/blob/master/screen3.png" height="400" alt="Screenshot"/>  | <img src="https://github.com/giuseppesorce/composescanner/blob/master/screen4.png" height="400" alt="Screenshot"/> |
+
+
+
+
 ### License
 ```
 Copyright 2022 Giuseppe Sorce
