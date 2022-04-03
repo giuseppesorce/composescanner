@@ -161,7 +161,6 @@ object Compose {
     object Permissions {
         const val permissions ="com.google.accompanist:accompanist-permissions:${Vers.COMPOSEPERMISSIONS}"
     }
-
 }
 
 object Camera {
@@ -188,21 +187,6 @@ object Kotlin {
 }
 
 
-object DI {
-    //DAGGER
-    const val DAGGER_DEP = "com.google.dagger:dagger:${Vers.DAGGER_VERSION}"
-    const val DAGGER_ANNOTATION = "com.google.dagger:dagger-compiler:${Vers.DAGGER_VERSION}"
-    //Hilt
-    const val HILT_DEP = "com.google.dagger:hilt-android:${Vers.HILT}"
-    const val HILT_KAPT = "com.google.dagger:hilt-android-compiler:${Vers.HILT}"
-    const val HILT_ANDROID_KAPT_TEST =
-        "com.google.dagger:hilt-android-compiler:${Vers.HILT}"
-    const val HILT_KAPT_TEST = "com.google.dagger:hilt-android-compiler:${Vers.HILT}"
-    const val HILT_VIEWMODEL =
-        "androidx.hilt:hilt-lifecycle-viewmodel:${Vers.LIFECYCLE_VIEWMODEL}"
-    const val HILT_COMPILER = "androidx.hilt:hilt-compiler:${Vers.HILT_COMPILER}"
-}
-
 object AndroidTestingLib {
     const val ANDROIDX_TEST_RULES = "androidx.test:rules:${Vers.ANDROIDX_TEST}"
     const val ANDROIDX_TEST_RUNNER = "androidx.test:runner:${Vers.ANDROIDX_TEST}"
@@ -222,3 +206,16 @@ object MockingLib {
         "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.0"
 }
 
+object GoogleService {
+    private const val google = "com.google.android.gms"
+    const val LOCATION_SERVICE =
+        "${google}:play-services-location:${Vers.LOCATION_SERVICE}"
+    const val MAPS_SERVICE =
+        "${google}:play-services-maps:${Vers.MAPS}"
+    const val LYFECYCLE_SERVICE =
+        "androidx.lifecycle:lifecycle-service:${Vers.LIFECYCLE_SERVICE}"
+    const val MLKIT_SCAN =
+        "${google}:play-services-mlkit-barcode-scanning:${Vers.MLKIT_SCANNER_VERS}"
+    const val MLKIT_SCAN_GOOGLE = "com.google.mlkit:barcode-scanning:16.0.3"
+    const val MLKIT_FIREBASE = "com.google.firebase:firebase-ml-vision:24.1.0"
+}
