@@ -11,6 +11,7 @@ It is possibble use camera flash to help scanning
 ### Technology 🔮
 - Kotlin DSL
 - Android Jetpack Compose
+- Compose app permissions
 - CameraX and Camera2
 
 * Add scanner is very simple, add composable function and set a closeScanListener to close scanner and get your cod
