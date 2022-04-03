@@ -33,9 +33,12 @@ fun MainScan() {
     var scannerState = viewModel.uiState.collectAsState().value
 
     Box(modifier = Modifier.fillMaxSize()) {
+
+
         if(scannerState.openScan){
             BuildCameraUI (closeScanListener = {
                 viewModel.handleEvent(ScannerEvents.CloseScanner)
+
             }){ barcode ->
                 Log.i("scanner", "Barcodde " + barcode)
                 viewModel.handleEvent(ScannerEvents.SetCode(barcode))
