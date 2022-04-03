@@ -16,17 +16,13 @@ It is possibble use camera flash to help scanning
 * Add scanner is very simple, add composable function and set a closeScanListener to close scanner and get your cod
 
     ```kotlin
-        /** no need to set titles in adapter */
+
         BuildCameraUI (closeScanListener = {
-
-
+           // to close scanner hide composable function
         }){ qrcode ->
 
             // check code
         }
-
-
-        /** no need to initialize even adapter */
 
     ```
 
